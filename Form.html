@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    input {
+        width: 320px;
+        height: 50px;
+        border: none;
+        border-radius: 30px;
+        padding-left: 10px;
+        outline: none;
+        background-color: rgb(225, 229, 229);
+        margin: 10px;
+
+    }
+
+    button {
+        width: 324px;
+        height: 40px;
+        border-radius: 30px;
+        background-color: aquamarine;
+        border: none;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <!-- <form id="submitForm"> -->
+    <input type="text" placeholder="enter username" id="userName">
+    <input type="password" placeholder="enter your password" id="password">
+    <button type="submit">Submit</button>
+    <!-- </form> -->
+
+
+    <script>
+
+        let userInput = document.getElementById('userName')
+
+        userInput.addEventListener('change', {
+            function(e) {
+                e.preventDefault()
+                console.log("testtttt")
+            }
+        })
+
+        // let submitForm = document.getElementById('submitForm')
+        // submitForm.addEventListener('submit',
+        //     function (event) {
+        //         event.preventDefault()
+        //         let userName = document.getElementById('userName').value
+        //         let password = document.getElementById('password').value
+        //         console.log(userName, "userName")
+        //         console.log(password, "password")
+        //     }
+        // )
+    </script>
+
+</body>
+
+</html>
